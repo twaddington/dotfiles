@@ -12,3 +12,6 @@ filetype on
 if has("gui_running")
     set guioptions=egmrt
 endif
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
