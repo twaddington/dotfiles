@@ -42,6 +42,7 @@ endif
 
 " Disable GUI options in MacVim
 if has("gui_running")
+    set guifont=Monaco:h12
     set guioptions=egmrt
 endif
 
