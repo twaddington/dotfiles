@@ -33,8 +33,11 @@ set colorcolumn=80
 
 "Autoindent
 if has("autocmd")
-    "Ruby tab width: 2 spaces
-    autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
+    " PHP use spaces
+    autocmd FileType php setlocal shiftwidth=2 tabstop=2 softtabstop=2
+
+    " Ruby tab width: 2 spaces
+    autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
     " Map the .md extension for Markdown syntax highlighting
     autocmd BufRead,BufNewFile *.\(md\|mdown\|markdown\) set filetype=markdown 
