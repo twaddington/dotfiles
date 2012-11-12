@@ -34,7 +34,7 @@ set colorcolumn=80
 "Autoindent
 if has("autocmd")
     " PHP use spaces
-    autocmd FileType php setlocal shiftwidth=2 tabstop=2 softtabstop=2
+    autocmd FileType php setlocal shiftwidth=4 tabstop=4 softtabstop=4
 
     " Ruby tab width: 2 spaces
     autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
