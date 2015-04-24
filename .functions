@@ -35,3 +35,7 @@ function breakvpn() {
         shift
     done
 }
+
+# Ruby
+eval "$(rbenv init -)"
+source /usr/local/opt/chruby/share/chruby/chruby.sh
