@@ -33,11 +33,11 @@ set colorcolumn=80
 
 "Autoindent
 if has("autocmd")
-    " PHP use spaces
-    autocmd FileType php setlocal shiftwidth=4 tabstop=4 softtabstop=4
+    "Scala tab width: 4 spaces
+    autocmd FileType scala setlocal shiftwidth=4 tabstop=4
 
-    " Ruby tab width: 2 spaces
-    autocmd FileType ruby setlocal shiftwidth=2 tabstop=2 softtabstop=2
+    "Ruby tab width: 2 spaces
+    autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 
     " Map the .md extension for Markdown syntax highlighting
     autocmd BufRead,BufNewFile *.\(md\|mdown\|markdown\) set filetype=markdown 
@@ -45,7 +45,7 @@ endif
 
 " Disable GUI options in MacVim
 if has("gui_running")
-    set guifont=Menlo:h14
+    set guifont=Menlo:h15
     set guioptions=egmrt
 endif
 
