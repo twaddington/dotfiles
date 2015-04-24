@@ -1,0 +1,21 @@
+.DS_Store
+
+# Editor files
+.classpath
+.project
+.settings
+.idea
+*.iml
+*.swp
+*.swo
+workspace.xml
+
+# Ruby
+*.irbrc
+.irb-history
+irb_android.sh
+
+# Generated files
+out/
+gen/
+build/

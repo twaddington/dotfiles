@@ -1,0 +1,14 @@
+[core]
+	excludesfile = ~/.gitignore
+[include]
+        path = ~/.gitconfig.local
+[color]
+        ui = auto
+	branch = true
+	diff = true
+	interactive = true
+	status = true
+[push]
+	default = simple
+[alias]
+	undo = reset --soft HEAD^
