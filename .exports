@@ -1,3 +1,5 @@
+# TODO: Clean this up!
+
 # Make vim the default editor
 export EDITOR="vim"
 

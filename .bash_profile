@@ -1,4 +1,3 @@
-
 # Load ~/.exports, ~/.aliases and ~/.functions
 for file in ~/.{exports,aliases,functions}; do
 	[ -r "$file" ] && source "$file"
@@ -14,3 +13,4 @@ shopt -s cdspell;
 #
 #
 # Thanks to https://github.com/paulirish/dotfiles/ for some tips
+

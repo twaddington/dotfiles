@@ -10,17 +10,8 @@ cp_p () {
   rsync -WavP --human-readable --progress $1 $2
 }
 
-# Break the work vpn for sites that require it
-function breakvpn() {
-    gw=`netstat -arn | grep ^default | awk '{print $2}'`
-    while (("$#")); do
-        sudo route delete $1
-        sudo route add $1 $gw
-        shift
-    done
-}
-
-# Performs a recursive git mv from the current directory.
+# Performs a recursive git mv from the current directory, useful for assets.
+#   For example: $ git-rename launcher_icon.png ic_launcher.png
 function git-rename() {
     find -L . -type f -name "$1" | while read FILE; do
         git mv "$FILE" "${FILE%$1}$2"
@@ -35,13 +26,12 @@ function adb-screenshot() {
     "$ANDROID_HOME/platform-tools/adb" -d shell rm /sdcard/screen.png
 }
 
-# Android logcat shortcuts, should probably be in .aliases
-function logv() {
-    "$ANDROID_HOME/platform-tools/adb" logcat Simple:v *:S
-}
-function logd() {
-    "$ANDROID_HOME/platform-tools/adb" logcat Simple:d *:S
-}
-function logi() {
-    "$ANDROID_HOME/platform-tools/adb" logcat Simple:i *:S
+# Break the work vpn for sites that require it
+function breakvpn() {
+    gw=`netstat -arn | grep ^default | awk '{print $2}'`
+    while (("$#")); do
+        sudo route delete $1
+        sudo route add $1 $gw
+        shift
+    done
 }
