@@ -1,5 +1,16 @@
 # Functions
 
+# Create a new directory and enter it
+function md() {
+	mkdir -p "$@" && cd "$@"
+}
+
+# Copy w/ progress
+cp_p () {
+  rsync -WavP --human-readable --progress $1 $2
+}
+
+# Break the work vpn for sites that require it
 function breakvpn() {
     gw=`netstat -arn | grep ^default | awk '{print $2}'`
     while (("$#")); do
@@ -9,28 +20,28 @@ function breakvpn() {
     done
 }
 
+# Performs a recursive git mv from the current directory.
 function git-rename() {
-    ## Performs a recursive git mv from the current directory.
     find -L . -type f -name "$1" | while read FILE; do
         git mv "$FILE" "${FILE%$1}$2"
         echo -ne "$FILE => $2\n"
     done
 }
 
+# Grab a screenshot from a connected device
 function adb-screenshot() {
     "$ANDROID_HOME/platform-tools/adb" -d shell screencap -p /sdcard/screen.png
     "$ANDROID_HOME/platform-tools/adb" -d pull /sdcard/screen.png $1
     "$ANDROID_HOME/platform-tools/adb" -d shell rm /sdcard/screen.png
 }
 
+# Android logcat shortcuts, should probably be in .aliases
 function logv() {
     "$ANDROID_HOME/platform-tools/adb" logcat Simple:v *:S
 }
-
 function logd() {
     "$ANDROID_HOME/platform-tools/adb" logcat Simple:d *:S
 }
-
 function logi() {
     "$ANDROID_HOME/platform-tools/adb" logcat Simple:i *:S
 }
