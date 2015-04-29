@@ -4,6 +4,11 @@ for file in ~/.{exports,aliases,functions}; do
 done
 unset file
 
+# Git completion
+if [ -f ~/.git-completion.bash ]; then
+    source ~/.git-completion.bash
+fi
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
@@ -13,4 +18,3 @@ shopt -s cdspell;
 #
 #
 # Thanks to https://github.com/paulirish/dotfiles/ for some tips
-
