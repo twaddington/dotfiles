@@ -9,6 +9,6 @@
 	interactive = true
 	status = true
 [push]
-	default = simple
+	default = nothing
 [alias]
 	undo = reset --soft HEAD^
