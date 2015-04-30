@@ -29,7 +29,7 @@ set smartcase       " ... unless they contain at least one capital letter
 set tildeop
 
 " Show overline
-set colorcolumn=100
+set colorcolumn=80
 
 "Autoindent
 if has("autocmd")
