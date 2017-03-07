@@ -12,7 +12,8 @@ export LANG="en_US"
 export JAVA_HOME="$(/usr/libexec/java_home)"
 
 # Android Home
-export ANDROID_HOME=~/.android-sdk
+#export ANDROID_HOME=~/.android-sdk
+export ANDROID_HOME=/Users/tristan/Library/Android/sdk
 
 # Maven
 export MVN=`which mvn`
