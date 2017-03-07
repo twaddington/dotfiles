@@ -15,6 +15,10 @@ shopt -s nocaseglob;
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
 
+# Python pyenv-virtualenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 #
 #
 # Thanks to https://github.com/paulirish/dotfiles/ for some tips
