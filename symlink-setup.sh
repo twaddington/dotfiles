@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Lovingly stolen from https://github.com/paulirish/dotfiles
-# 
+#
 # this is a messy edit of alrra's nice work here:
 # https://raw.githubusercontent.com/alrra/dotfiles/master/os/create_symbolic_links.sh
 # it should and needs to be improved to be less of a hack.
@@ -12,7 +12,7 @@
 
 #
 # utils !!!
-# 
+#
 
 
 answer_is_yes() {
@@ -138,7 +138,7 @@ print_success() {
 
 
 declare -a FILES_TO_SYMLINK=$(find . -type f -maxdepth 1 -name ".*" -not -name .DS_Store -not -name .git -not -name .osx | sed -e 's|//|/|' | sed -e 's|./.|.|')
-FILES_TO_SYMLINK="$FILES_TO_SYMLINK .vim" # add in vim action.
+FILES_TO_SYMLINK="$FILES_TO_SYMLINK bin .vim .config/fish"
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -152,7 +152,8 @@ main() {
     for i in ${FILES_TO_SYMLINK[@]}; do
 
         sourceFile="$(pwd)/$i"
-        targetFile="$HOME/$(printf "%s" "$i" | sed "s/.*\/\(.*\)/\1/g")"
+        #targetFile="$HOME/$(printf "%s" "$i" | sed "s/.*\/\(.*\)/\1/g")"
+        targetFile="$HOME/$(printf "%s" "$i")"
 
         if [ -e "$targetFile" ]; then
             if [ "$(readlink "$targetFile")" != "$sourceFile" ]; then

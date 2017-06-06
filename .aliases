@@ -1,5 +1,1 @@
-# Aliases
-
-alias logv="${ANDROID_HOME}/platform-tools/adb logcat Simple:v *:S"
-alias logd="${ANDROID_HOME}/platform-tools/adb logcat Simple:d *:S"
-alias logi="${ANDROID_HOME}/platform-tools/adb logcat Simple:i *:S"
+# Bash aliases go here

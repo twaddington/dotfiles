@@ -1,9 +1,9 @@
 [core]
 	excludesfile = ~/.gitignore
 [include]
-        path = ~/.gitconfig.local
+	path = ~/.gitconfig.local
 [color]
-        ui = auto
+	ui = auto
 	branch = true
 	diff = true
 	interactive = true

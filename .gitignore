@@ -10,6 +10,9 @@
 *.swo
 workspace.xml
 
+# Python
+Pipfile.lock
+
 # Ruby
 *.irbrc
 .irb-history
