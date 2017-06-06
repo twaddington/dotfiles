@@ -11,7 +11,6 @@ set -x ANDROID_HOME /Users/tristan/Library/Android/sdk
 set -x PATH $PATH ~/bin
 set -x PATH $PATH $ANDROID_HOME/tools
 set -x PATH $PATH $ANDROID_HOME/platform-tools
-set -x PATH $PATH /usr/local/heroku/bin
 
 # Aliases
 # ...
