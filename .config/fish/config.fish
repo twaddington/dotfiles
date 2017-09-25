@@ -13,4 +13,4 @@ set -x PATH $PATH $ANDROID_HOME/tools
 set -x PATH $PATH $ANDROID_HOME/platform-tools
 
 # Aliases
-# ...
+alias ll 'ls -lah'
