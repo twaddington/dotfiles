@@ -5,7 +5,7 @@ set -x EDITOR vim
 set -x JAVA_HOME (/usr/libexec/java_home)
 
 # Android Home
-set -x ANDROID_HOME /Users/tristan/Library/Android/sdk
+set -x ANDROID_HOME ~/Library/Android/sdk
 
 # Path
 set -x PATH $PATH ~/bin
