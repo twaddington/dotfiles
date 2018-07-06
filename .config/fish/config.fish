@@ -2,7 +2,7 @@
 set -x EDITOR vim
 
 # Java Home
-set -x JAVA_HOME (/usr/libexec/java_home)
+set -x JAVA_HOME (/usr/libexec/java_home -v 1.8)
 
 # Android Home
 set -x ANDROID_HOME ~/Library/Android/sdk
