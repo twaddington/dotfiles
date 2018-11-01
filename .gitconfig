@@ -12,3 +12,4 @@
 	default = nothing
 [alias]
 	undo = reset --soft HEAD^
+	diffw = diff --word-diff
