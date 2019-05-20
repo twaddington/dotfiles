@@ -25,13 +25,3 @@ function adb-screenshot() {
     "$ANDROID_HOME/platform-tools/adb" -d pull /sdcard/screen.png $1
     "$ANDROID_HOME/platform-tools/adb" -d shell rm /sdcard/screen.png
 }
-
-# Break the work vpn for sites that require it
-function breakvpn() {
-    gw=`netstat -arn | grep ^default | awk '{print $2}'`
-    while (("$#")); do
-        sudo route delete $1
-        sudo route add $1 $gw
-        shift
-    done
-}
