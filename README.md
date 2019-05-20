@@ -19,7 +19,7 @@ Add `~/.gitconfig.local` to your home directory.
     - Pro
     - No opacity
     - Monaco 14pt
-- Install and/or update Xcode Command Line Tools
+- `xcode-select --install`
 - Install the latest Java Development Kit (JDK) for your platform
 - Install [Homebrew](https://brew.sh/)
   - brew install git
