@@ -29,18 +29,15 @@ Add `~/.gitconfig.local` to your home directory.
   - brew install pipenv
   - brew install fish
 - Install Oh My Fish!
-  - curl -L https://get.oh-my.fish | fish
-  - omf install bobthefish
+  - `curl -L https://get.oh-my.fish | fish`
+  - `omf install bobthefish`
 - Generate a new SSH key
-  - ssh-keygen -t rsa -b 4096 -C “your_email@foo.com”
+  - `ssh-keygen -t rsa -b 4096 -C “your_email@foo.com”`
   - When you’re prompted to “Enter a file in which to save the key,” press Enter. This accepts the default file location.
   - At the “Enter password” prompt press Enter to skip setting a password.
 - Pull dotfiles and run installer
 
 ### Applications
 
-- Slack
-- Android Studio
-- WebStorm
 - 1Password
 - Magnet window manager
