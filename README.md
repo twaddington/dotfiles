@@ -21,7 +21,7 @@ Add `~/.gitconfig.local` to your home directory.
     - Monaco 14pt
 - Install and/or update Xcode Command Line Tools
 - Install the latest Java Development Kit (JDK) for your platform
-- Install Homebrew
+- Install [Homebrew](https://brew.sh/)
   - brew install git
   - brew install the_silver_searcher
   - brew install httpie
