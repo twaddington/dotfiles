@@ -1,5 +1,5 @@
 set -x EDITOR vim
-set -x PATH $HOME/bin $PATH
+set -x PATH $PATH $HOME/bin
 
 # Use universal variables to configure this machine's environment.
 #
