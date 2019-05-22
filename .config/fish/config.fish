@@ -1,16 +1,13 @@
-# Exports
 set -x EDITOR vim
+set -x PATH $HOME/bin $PATH
 
-# Java Home
-set -x JAVA_HOME (/usr/libexec/java_home -v 1.8)
+# Use universal variables to configure this machine's environment.
+#
+# set -U JAVA_HOME (/usr/libexec/java_home -v 1.8)
+# set -U ANDROID_HOME $HOME/Library/Android/sdk
 
-# Android Home
-set -x ANDROID_HOME ~/Library/Android/sdk
-
-# Path
-set -x PATH $PATH ~/bin
-set -x PATH $PATH $ANDROID_HOME/tools
-set -x PATH $PATH $ANDROID_HOME/platform-tools
-
-# Aliases
-alias ll 'ls -lah'
+# Use 'fish_user_paths' to set machine specific user paths.
+#
+# set -U fish_user_paths $ANDROID_HOME/tools $fish_user_paths 
+# set -U fish_user_paths $ANDROID_HOME/platform-tools $fish_user_paths 
+# set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths 

@@ -1,26 +1,24 @@
+# Thumbnails
 .DS_Store
 
-# Editor files
+# Editors
+workspace.xml
+
 .classpath
 .project
 .settings
 .idea
+
 *.iml
 *.swp
 *.swo
-workspace.xml
+
 .vim/.netrwhist
 
 # Python
 Pipfile.lock
 
-# Ruby
-*.irbrc
-.irb-history
-irb_android.sh
-
-# Generated files
+# Generated
 out/
 gen/
 build/
-fishd.*
