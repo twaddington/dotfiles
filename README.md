@@ -18,7 +18,7 @@ Add `~/.gitconfig.local` to your home directory.
 - Configure Terminal
     - Pro
     - No opacity
-    - Monaco 14pt
+    - Menlo 15pt
 - `xcode-select --install`
 - Install the latest Java Development Kit (JDK) for your platform
 - Install [Homebrew](https://brew.sh/)
@@ -28,9 +28,6 @@ Add `~/.gitconfig.local` to your home directory.
   - brew install pidcat
   - brew install pipenv
   - brew install fish
-- Install Oh My Fish!
-  - `curl -L https://get.oh-my.fish | fish`
-  - `omf install bobthefish`
 - Generate a new SSH key
   - `ssh-keygen -t rsa -b 4096 -C “your_email@foo.com”`
   - When you’re prompted to “Enter a file in which to save the key,” press Enter. This accepts the default file location.
