@@ -19,6 +19,7 @@ Add `~/.gitconfig.local` to your home directory.
     - Pro
     - No opacity
     - Menlo 15pt
+    - Keyboard -> Select "Use Option as Meta key"
 - `xcode-select --install`
 - Install the latest Java Development Kit (JDK) for your platform
 - Install [Homebrew](https://brew.sh/)
