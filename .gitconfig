@@ -9,7 +9,7 @@
 	interactive = true
 	status = true
 [push]
-	default = nothing
+	default = current
 [alias]
 	undo = reset --soft HEAD^
 	diffw = diff --word-diff
