@@ -25,8 +25,9 @@ Add `~/.gitconfig.local` to your home directory.
 - Install [Homebrew](https://brew.sh/)
   - brew install git
   - brew install the_silver_searcher
+  - brew install ripgrep
+  - brew install fd
   - brew install httpie
-  - brew install pidcat
   - brew install pipenv
   - brew install fish
 - Generate a new SSH key
