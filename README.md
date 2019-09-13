@@ -25,7 +25,6 @@ Add `~/.gitconfig.local` to your home directory.
 - Install the latest Java Development Kit (JDK) for your platform
 - Install [Homebrew](https://brew.sh/)
   - brew install git
-  - brew install the_silver_searcher
   - brew install ripgrep
   - brew install fd
   - brew install httpie
