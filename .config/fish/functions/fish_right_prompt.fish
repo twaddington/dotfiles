@@ -1,0 +1,1 @@
+/Users/tristan/.config/fish/functions/theme-pure/fish_right_prompt.fish
