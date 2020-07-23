@@ -1,15 +1,23 @@
 [core]
-	excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore
 [include]
-	path = ~/.gitconfig.local
+    path = ~/.gitconfig.local
 [color]
-	ui = auto
-	branch = true
-	diff = true
-	interactive = true
-	status = true
+    ui = auto
+    branch = true
+    diff = true
+    interactive = true
+    status = true
 [push]
-	default = current
+    default = current
 [alias]
-	undo = reset --soft HEAD^
-	diffw = diff --word-diff
+    ; unstage file
+    unstage = reset HEAD --
+    ; undo the most recent commit
+    undo = reset --soft HEAD^
+    ;
+    recent = branch --format='%(if)%(HEAD)%(then)%(color:green)%(end)%(HEAD) %(align:left,16)%(committerdate:relative)%(end)%(refname:short)'
+[branch]
+    sort = -committerdate
+[tag]
+    sort = -creatordate
