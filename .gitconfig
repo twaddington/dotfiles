@@ -11,12 +11,19 @@
 [push]
     default = current
 [alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+
     ; unstage file
     unstage = reset HEAD --
     ; undo the most recent commit
     undo = reset --soft HEAD^
-    ;
+    ; show recent branches
     recent = branch --format='%(if)%(HEAD)%(then)%(color:green)%(end)%(HEAD) %(align:left,16)%(committerdate:relative)%(end)%(refname:short)'
+    ; show recent branches
+    recents = recent
 [branch]
     sort = -committerdate
 [tag]
