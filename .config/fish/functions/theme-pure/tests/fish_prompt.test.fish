@@ -1,17 +1,21 @@
-source $current_dirname/../fish_prompt.fish
+source $current_dirname/fixtures/constants.fish
+source $current_dirname/../functions/fish_prompt.fish
+source $current_dirname/../functions/_pure_print_prompt_rows.fish
+source $current_dirname/../functions/_pure_is_single_line_prompt.fish
+@mesg (_print_filename $current_filename)
 
-set --local succeed 0
 
 function setup
     function _pure_prompt_beginning; echo '['; end
     function _pure_prompt_first_line; echo -e '/path/ git duration'; end
+    function _pure_place_iterm2_prompt_mark; end
     function _pure_prompt; echo '❯'; end
     function _pure_prompt_ending; echo ']'; end
 end
 
 @test "fish_prompt: succeed" (
     fish_prompt 2>&1 >/dev/null
-) $status -eq $succeed
+) $status -eq $SUCCESS
 
 @test "fish_prompt: print segments" (
     fish_prompt
@@ -30,3 +34,13 @@ end
 
     echo $_pure_fresh_session
 ) = false
+
+@test "fish_prompt: use 2-lines prompt by default" (
+    fish_prompt | wc -l
+) = 2
+
+@test "fish_prompt: use 1-line compact-prompt" (
+    set --universal pure_enable_single_line_prompt true
+
+    fish_prompt | wc -l
+) = 1

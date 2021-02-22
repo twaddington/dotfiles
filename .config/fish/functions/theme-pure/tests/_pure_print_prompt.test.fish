@@ -1,11 +1,17 @@
+source $current_dirname/fixtures/constants.fish
 source $current_dirname/../functions/_pure_print_prompt.fish
 source $current_dirname/../functions/_pure_string_width.fish
+@mesg (_print_filename $current_filename)
 
-set --local empty ''
+
+function setup
+    _purge_configs
+    _disable_colors
+end
 
 @test "_pure_print_prompt: returns nothing when no argument provided" (
     _pure_print_prompt
-) = $empty
+) = $EMPTY
 
 @test "_pure_print_prompt: trims prompt left side" (
     _pure_print_prompt " user host "
@@ -13,9 +19,8 @@ set --local empty ''
 
 @test "_pure_print_prompt: ignores color change argument" (
     _pure_print_prompt (set_color red)
-) = $empty
+) = $EMPTY
 
 @test "_pure_print_prompt: allow colored argument" (
     _pure_print_prompt ""(set_color red)"hello"
 ) = (set_color red)'hello'
-

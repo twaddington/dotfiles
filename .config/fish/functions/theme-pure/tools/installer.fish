@@ -21,13 +21,20 @@ function pure_set_pure_install_path
     end
 end
 
+function pure_scaffold_fish_directories
+    printf "\tScaffolding fish directories"
+
+    mkdir -p $FISH_CONFIG_DIR/functions/
+    mkdir -p $FISH_CONFIG_DIR/conf.d/
+end
+
 function pure_fetch_source
     printf "\tFetching theme's source"
 
-    set --local package "https://github.com/rafaelrinaldi/pure/archive/master.tar.gz"
+    set --local package "https://github.com/pure-fish/pure/archive/master.tar.gz"
     mkdir -p $PURE_INSTALL_DIR
 
-    command curl --show-error --location "$package" | command tar -xzf- -C $PURE_INSTALL_DIR --strip-components=1; or begin;
+    command curl --silent --show-error --location "$package" | command tar -xzf- -C $PURE_INSTALL_DIR --strip-components=1; or begin;
         printf "%sError: fetching Pure sources failed%s" "$color_error" "$color_normal"
         return 1
     end
@@ -37,7 +44,7 @@ function pure_backup_existing_theme
     printf "\tBackuping existing theme"
     set --local old_prompt $FISH_CONFIG_DIR/functions/fish_prompt.fish
     set --local backup_prompt $old_prompt.ignore
-    
+
     if test -f "$old_prompt"
         mv "$old_prompt" "$backup_prompt"; pure_exit_symbol $status
         printf "\tPrevious config saved to: %s%s%s." "$color_white" "$backup_prompt" "$color_normal"
@@ -56,14 +63,18 @@ end
 
 function pure_symlinks_assets
     printf "\tLink pure's configuration and functions to fish config directory"
-    ln -sf $PURE_INSTALL_DIR/fish_*.fish $FISH_CONFIG_DIR/functions/
-    ln -sf $PURE_INSTALL_DIR/functions/*.fish $FISH_CONFIG_DIR/functions/
-    ln -sf $PURE_INSTALL_DIR/conf.d/* $FISH_CONFIG_DIR/conf.d/
+    for pure_function in $PURE_INSTALL_DIR/functions/*.fish
+        ln -sf $pure_function $FISH_CONFIG_DIR/functions/
+    end
+    for pure_config in $PURE_INSTALL_DIR/conf.d/*
+        ln -sf $pure_config $FISH_CONFIG_DIR/conf.d/
+    end
 end
 
 function pure_enable_theme
     printf "\tEnabling theme"
     set fish_function_path $PURE_INSTALL_DIR/functions/ $fish_function_path
+
     source $FISH_CONFIG_DIR/config.fish
 end
 
@@ -97,6 +108,7 @@ function install_pure
     printf "Installing Pure theme\n"
     pure_set_fish_config_path $argv
     pure_set_pure_install_path $argv
+    pure_scaffold_fish_directories; pure_exit_symbol $status
     pure_fetch_source; pure_exit_symbol $status
     pure_backup_existing_theme; pure_exit_symbol $status
     pure_enable_autoloading; pure_exit_symbol $status

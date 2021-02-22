@@ -1,1 +1,1 @@
-/Users/tristan/.config/fish/functions/theme-pure/fish_title.fish
+/Users/tristan/.config/fish/functions/theme-pure/functions/fish_title.fish

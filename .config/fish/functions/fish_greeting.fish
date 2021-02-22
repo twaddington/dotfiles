@@ -1,1 +1,1 @@
-/Users/tristan/.config/fish/functions/theme-pure/fish_greeting.fish
+/Users/tristan/.config/fish/functions/theme-pure/functions/fish_greeting.fish
