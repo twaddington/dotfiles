@@ -29,4 +29,6 @@
 [tag]
     sort = -creatordate
 [rebase]
-	autosquash = true
+    autosquash = true
+[pull]
+    ff = only
