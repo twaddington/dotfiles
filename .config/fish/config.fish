@@ -9,6 +9,7 @@ set -gx GOPATH $HOME/go
 # fish_user_paths, an array of directories that are prepended to PATH.
 #
 # set -Ua fish_user_paths $ANDROID_SDK_ROOT/tools
+# set -Ua fish_user_paths $ANDROID_SDK_ROOT/tools/bin
 # set -Ua fish_user_paths $ANDROID_SDK_ROOT/platform-tools
 # set -Ua fish_user_paths $HOME/.cargo/bin
 # set -Ua fish_user_paths /usr/local/sbin
