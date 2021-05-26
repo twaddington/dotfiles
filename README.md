@@ -23,7 +23,6 @@ Add `~/.gitconfig.local` to your home directory.
     - Keyboard -> Select "Use Option as Meta key"
     - Set default shell
 - `xcode-select --install`
-- Install the latest Java Development Kit (JDK) for your platform
 - Install [Homebrew](https://brew.sh/)
   - `brew install git, fish, ripgrep, fd, tmux`
 - Generate a new SSH key
@@ -38,6 +37,11 @@ Add `~/.gitconfig.local` to your home directory.
 sudo bash -c 'echo /opt/homebrew/bin/fish >> /etc/shells'
 chsh -s /opt/homebrew/bin/fish
 ```
+
+### Java
+
+- (Optional) Install the latest Java Development Kit (JDK) for your platform.
+  - https://adoptopenjdk.net/
 
 ### Applications
 
