@@ -8,12 +8,12 @@ set -gx GOPATH $HOME/go
 #
 # fish_user_paths, an array of directories that are prepended to PATH.
 #
-# set -Ua fish_user_paths $ANDROID_SDK_ROOT/tools
-# set -Ua fish_user_paths $ANDROID_SDK_ROOT/tools/bin
-# set -Ua fish_user_paths $ANDROID_SDK_ROOT/platform-tools
-# set -Ua fish_user_paths $HOME/.cargo/bin
-# set -Ua fish_user_paths /opt/homebrew/bin/
-# set -Ua fish_user_paths /usr/local/sbin
+# set -a fish_user_paths $ANDROID_SDK_ROOT/tools
+# set -a fish_user_paths $ANDROID_SDK_ROOT/tools/bin
+# set -a fish_user_paths $ANDROID_SDK_ROOT/platform-tools
+# set -a fish_user_paths $HOME/.cargo/bin
+# set -a fish_user_paths /opt/homebrew/bin/
+# set -a fish_user_paths /usr/local/sbin
 
 # THEME PURE #
 set fish_function_path /Users/tristan/.config/fish/functions/theme-pure/functions/ $fish_function_path
