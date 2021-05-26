@@ -15,6 +15,7 @@ Add `~/.gitconfig.local` to your home directory.
 ## New computer
 
 - Chrome
+- 1Password
 - Configure Terminal
     - Pro
     - No opacity
@@ -24,13 +25,7 @@ Add `~/.gitconfig.local` to your home directory.
 - `xcode-select --install`
 - Install the latest Java Development Kit (JDK) for your platform
 - Install [Homebrew](https://brew.sh/)
-  - brew install git
-  - brew install ripgrep
-  - brew install fd
-  - brew install httpie
-  - brew install pipenv
-  - brew install fish
-  - brew install tmux
+  - `brew install git, fish, ripgrep, fd, tmux`
 - Generate a new SSH key
   - `ssh-keygen -a 100 -t ed25519 -C “your_email@foo.com”`
   - When you’re prompted to “Enter a file in which to save the key,” press Enter. This accepts the default file location.
