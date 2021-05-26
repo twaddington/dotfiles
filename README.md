@@ -32,6 +32,13 @@ Add `~/.gitconfig.local` to your home directory.
   - At the “Enter password” prompt press Enter to skip setting a password.
 - Add SSH key to GitHub.com, Pull dotfiles, and run installer
 
+### Change default shell
+
+```
+sudo bash -c 'echo /opt/homebrew/bin/fish >> /etc/shells'
+chsh -s /opt/homebrew/bin/fish
+```
+
 ### Applications
 
 - 1Password
