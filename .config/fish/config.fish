@@ -12,6 +12,7 @@ set -gx GOPATH $HOME/go
 # set -Ua fish_user_paths $ANDROID_SDK_ROOT/tools/bin
 # set -Ua fish_user_paths $ANDROID_SDK_ROOT/platform-tools
 # set -Ua fish_user_paths $HOME/.cargo/bin
+# set -Ua fish_user_paths /opt/homebrew/bin/
 # set -Ua fish_user_paths /usr/local/sbin
 
 # THEME PURE #
