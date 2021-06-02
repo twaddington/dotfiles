@@ -1,5 +1,6 @@
 set -gx EDITOR vim
 set -gx GOPATH $HOME/go
+set -gx RIPGREP_CONFIG_PATH $HOME/.ripgreprc
 
 # universal variables, define machine specific settings.
 #
