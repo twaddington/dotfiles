@@ -47,3 +47,7 @@ chsh -s /opt/homebrew/bin/fish
 
 - 1Password
 - Magnet window manager
+
+### Spotlight
+
+- Disable Spotlight indexing of Developer directory.
