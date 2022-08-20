@@ -1,2 +1,4 @@
---type-add
-storybook:*.stories.tsx
+--type-add=storybook:*.stories.tsx
+
+# Ignore
+--glob=!package-lock.json
