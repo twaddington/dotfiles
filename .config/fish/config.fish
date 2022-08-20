@@ -6,7 +6,8 @@ set -gx RIPGREP_CONFIG_PATH $HOME/.ripgreprc
 #
 # set -Ux JAVA_HOME (/usr/libexec/java_home -v 1.8)
 # set -Ux ANDROID_SDK_ROOT $HOME/Library/Android/sdk
-#
+# set -Ux VOLTA_HOME $HOME/.volta
+
 # fish_user_paths, an array of directories that are prepended to PATH.
 #
 # set -a fish_user_paths $ANDROID_SDK_ROOT/tools
@@ -15,7 +16,9 @@ set -gx RIPGREP_CONFIG_PATH $HOME/.ripgreprc
 # set -a fish_user_paths $HOME/.cargo/bin
 # set -a fish_user_paths /opt/homebrew/bin/
 # set -a fish_user_paths /usr/local/sbin
+# set -a fish_user_paths $VOLTA_HOME/bin
 
 # THEME PURE #
 set fish_function_path /Users/tristan/.config/fish/functions/theme-pure/functions/ $fish_function_path
 source /Users/tristan/.config/fish/functions/theme-pure/conf.d/pure.fish
+
