@@ -2,16 +2,6 @@
 
 These are my workstation dotfiles.
 
-## Git
-
-Add `~/.gitconfig.local` to your home directory.
-
-```
-[user]
-    name = Tristan Waddington
-    email = tristan@foo.com
-```
-
 ## New computer
 
 - Chrome
@@ -21,8 +11,6 @@ Add `~/.gitconfig.local` to your home directory.
     - No opacity
     - Menlo 15pt
     - Keyboard -> Select "Use Option as Meta key"
-    - Set default shell
-- `xcode-select --install`
 - Install [Homebrew](https://brew.sh/)
   - `brew install git, fish, ripgrep, fd, tmux`
 - Generate a new SSH key
@@ -30,6 +18,16 @@ Add `~/.gitconfig.local` to your home directory.
   - When you’re prompted to “Enter a file in which to save the key,” press Enter. This accepts the default file location.
   - At the “Enter password” prompt press Enter to skip setting a password.
 - Add SSH key to GitHub.com, Pull dotfiles, and run installer
+
+## Git
+
+Add `~/.gitconfig.local` to your home directory.
+
+```
+[user]
+    name = Tristan Waddington
+    email = tristan@foo.com
+```
 
 ### Change default shell
 
@@ -43,7 +41,7 @@ chsh -s /opt/homebrew/bin/fish
 - (Optional) Install the latest Java Development Kit (JDK) for your platform.
   - https://adoptopenjdk.net/
 
-### Applications
+### App Store
 
 - 1Password
 - Magnet window manager
