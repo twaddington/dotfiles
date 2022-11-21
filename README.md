@@ -12,7 +12,7 @@ These are my workstation dotfiles.
     - Menlo 15pt
     - Keyboard -> Select "Use Option as Meta key"
 - Install [Homebrew](https://brew.sh/)
-  - `brew install git, fish, ripgrep, fd, tmux`
+  - `/opt/homebrew/bin/brew install git, fish, ripgrep, fd, tmux`
 - Generate a new SSH key
   - `ssh-keygen -a 100 -t ed25519 -C “your_email@foo.com”`
   - When you’re prompted to “Enter a file in which to save the key,” press Enter. This accepts the default file location.
