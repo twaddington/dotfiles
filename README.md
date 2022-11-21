@@ -43,7 +43,7 @@ Add `~/.gitconfig.local` to your home directory.
 ### Java
 
 - (Optional) Install the latest Java Development Kit (JDK) for your platform.
-  - https://adoptopenjdk.net/
+  - https://adoptium.net/temurin/releases/
 
 ### App Store
 
