@@ -23,7 +23,14 @@ These are my workstation dotfiles.
   - At the “Enter password” prompt press Enter to skip setting a password.
 - Add SSH key to GitHub.com, Pull dotfiles, and run installer
 
-## Git
+### Change default shell
+
+```
+sudo bash -c 'echo /opt/homebrew/bin/fish >> /etc/shells'
+chsh -s /opt/homebrew/bin/fish
+```
+
+### Git
 
 Add `~/.gitconfig.local` to your home directory.
 
@@ -31,13 +38,6 @@ Add `~/.gitconfig.local` to your home directory.
 [user]
     name = Tristan Waddington
     email = tristan@foo.com
-```
-
-### Change default shell
-
-```
-sudo bash -c 'echo /opt/homebrew/bin/fish >> /etc/shells'
-chsh -s /opt/homebrew/bin/fish
 ```
 
 ### Java
