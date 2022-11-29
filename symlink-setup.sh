@@ -149,6 +149,8 @@ main() {
     local sourceFile=""
     local targetFile=""
 
+    mkd "$HOME/.config"
+
     for i in ${FILES_TO_SYMLINK[@]}; do
 
         sourceFile="$(pwd)/$i"
