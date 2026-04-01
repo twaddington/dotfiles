@@ -1,1 +1,7 @@
-/Users/tristan/.config/fish/functions/theme-pure/functions/_pure_prompt_beginning.fish
+function _pure_prompt_beginning \
+    --description 'Clear existing line content'
+
+    set --local clear_line "\r\033[K"
+
+    echo $clear_line
+end
