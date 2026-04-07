@@ -23,7 +23,7 @@ These are my workstation dotfiles.
     - Slack
     - Spotify
     - Zoom Workspace
-- Configure Terminal
+- Configure Terminal (import from `Pro.terminal`)
     - Pro
     - No opacity
     - Menlo 15pt
