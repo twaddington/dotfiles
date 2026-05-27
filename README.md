@@ -2,6 +2,9 @@
 
 These are my workstation dotfiles.
 
+> [!TIP]
+> Consider migrating to [chezmoi](https://www.chezmoi.io/quick-start/).
+
 ## New Macbook Pro
 
 - Install Chrome
