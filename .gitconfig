@@ -9,6 +9,7 @@
     interactive = true
     status = true
 [push]
+    autoSetupRemote = true
     default = current
 [alias]
     co = checkout
@@ -33,4 +34,4 @@
 [pull]
     ff = only
 [init]
-	defaultBranch = main
+    defaultBranch = main
